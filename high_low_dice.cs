@@ -14,28 +14,28 @@ class Program
             int playerDice = rnd.Next(1, 7);
             int computerDice = rnd.Next(1, 7);
 
-            Console.WriteLine("\nRound " + round);
-            Console.WriteLine("Your dice: " + playerDice);
-            Console.WriteLine("Computer's dice: " + computerDice);
+            Console.WriteLine("round " + round);
+            Console.WriteLine("your dice " + playerDice);
+            Console.WriteLine("pc dice " + computerDice);
 
             if (playerDice > computerDice)
             {
                 playerScore++;
-                Console.WriteLine("You win this round!");
+                Console.WriteLine("you win this round");
             }
             else if (playerDice < computerDice)
             {
                 computerScore++;
-                Console.WriteLine("Computer wins this round!");
+                Console.WriteLine("pc win this round");
             }
             else
             {
-                Console.WriteLine("Draw!");
+                Console.WriteLine("draw");
             }
         }
 
-        Console.WriteLine("\nFinal Score");
-        Console.WriteLine("You: " + playerScore);
-        Console.WriteLine("Computer: " + computerScore);
+        Console.WriteLine("final score");
+        Console.WriteLine("you " + playerScore);
+        Console.WriteLine("pc " + computerScore);
     }
 }
